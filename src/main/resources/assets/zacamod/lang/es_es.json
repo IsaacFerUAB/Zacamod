@@ -1,7 +1,9 @@
 {
   "item.zacamod.navaja": "Navaja Gitana",
-  "item.zacamod.pedrolo": "Pedrolo Sanche",
+  "item.zacamod.pedrolo": "Pedrolo Sanché",
   "zaca_tab": "Reliquias Zacardianas",
   "item.zacamod.tenedor": "Tenedor",
-  "item.zacamod.sal": "Sal"
+  "item.zacamod.sal": "Sal",
+  "item.zacamod.jamon": "Jamón",
+  "item.zacamod.bocata_jamon": "Bocata de jamón"
 }

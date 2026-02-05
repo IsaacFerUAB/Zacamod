@@ -1,0 +1,21 @@
+{
+"type": "minecraft:crafting_shapeless",
+"ingredients": [
+    {
+    "item": "zacamod:pedrolo"
+    },
+    {
+    "item": "zacamod:pedrolo"
+    },
+    {
+    "item": "zacamod:pedrolo"
+    },
+    {
+    "item": "zacamod:pedrolo"
+    }
+],
+"result": {
+    "item": "minecraft:cobblestone",
+    "count": 1
+}
+}

@@ -20,27 +20,33 @@ public class ModItems {
         DeferredRegister.create(ForgeRegistries.ITEMS, ZacaMod.MOD_ID);
 
 
+    //ARMAS / HERAMIENTAS
+    public static final RegistryObject<Item> NAVAJA = ITEMS.register("navaja", 
+        () -> new Item(new Item.Properties()
+        .rarity(Rarity.EPIC)
+        .durability(1200)
+        ));
+
+    public static final RegistryObject<Item> TENEDOR = ITEMS.register("tenedor", 
+        () -> new Item(new Item.Properties()
+        .stacksTo(4)));
     
+    //MATERIALES / OTROS
     public static final RegistryObject<Item> PEDROLO = ITEMS.register("pedrolo", 
         () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(1).saturationMod(0.1f).build()).stacksTo(16)));
     
+    public static final RegistryObject<Item> SAL = ITEMS.register("sal",
+        () -> new Item(new Item.Properties()));
+    //COMIDA
     public static final RegistryObject<Item> JAMON = ITEMS.register("jamon", 
         () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.2f).build()).stacksTo(64)));
     
     public static final RegistryObject<Item> BOCATAJAMON = ITEMS.register("bocata_jamon", 
         () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8f).build()).stacksTo(32)));
         
-    public static final RegistryObject<Item> NAVAJA = ITEMS.register("navaja", 
-        () -> new Item(new Item.Properties()
-        .rarity(Rarity.EPIC)
-        .durability(1200)
-        ));
-    public static final RegistryObject<Item> TENEDOR = ITEMS.register("tenedor", 
-        () -> new Item(new Item.Properties()
-        .stacksTo(4)));
-        
-    public static final RegistryObject<Item> SAL = ITEMS.register("sal",
-        () -> new Item(new Item.Properties()));
+    
+    
+    
 
     // 3. EL MÉTODO DE REGISTRO (El Mensajero)
     // Este método es el que llamaremos desde la clase principal para entregar la lista.
