@@ -1,5 +1,8 @@
 package com.zaca.zacamod;
 
+import com.zaca.zacamod.item.ModItems;
+import com.zaca.zacamod.item.tab.ModCreativeModeTabs;
+
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -13,10 +16,12 @@ public class ZacaMod {
         
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        // AQUÍ REGISTRAREMOS LOS ÍTEMS MÁS ADELANTE
-        // ItemInit.ITEMS.register(modEventBus);
+        // REGISTRO
+        ModCreativeModeTabs.register(modEventBus);
+        ModItems.register(modEventBus);
+        
 
-        // Registramos este mod en el bus principal de Forge
+        // Registra el mod en el bus principal de Forge
         MinecraftForge.EVENT_BUS.register(this);
     }
 }
