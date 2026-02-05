@@ -2,6 +2,7 @@ package com.zaca.zacamod;
 
 import com.zaca.zacamod.item.ModItems;
 import com.zaca.zacamod.item.tab.ModCreativeModeTabs;
+import com.zaca.zacamod.block.ZacaBlocks; 
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,7 +20,7 @@ public class ZacaMod {
         // REGISTRO
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
-        
+        ZacaBlocks.register(modEventBus);
 
         // Registra el mod en el bus principal de Forge
         MinecraftForge.EVENT_BUS.register(this);

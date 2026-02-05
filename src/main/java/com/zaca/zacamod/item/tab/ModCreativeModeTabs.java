@@ -27,6 +27,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.TENEDOR.get());
                         output.accept(ModItems.SAL.get());
                         output.accept(ModItems.BOCATAJAMON.get());
+                        output.accept(ModItems.OCTA.get());
+                        output.accept(ModItems.SAL_ORE.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {
