@@ -24,10 +24,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.NAVAJA.get());
                         output.accept(ModItems.PEDROLO.get());
                         output.accept(ModItems.JAMON.get());
-                        
+                        output.accept(ModItems.TENEDOR.get());
+                        output.accept(ModItems.SAL.get());
                     })
                     .build());
-
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);
     }
