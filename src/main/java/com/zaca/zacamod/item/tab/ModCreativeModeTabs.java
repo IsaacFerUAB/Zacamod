@@ -1,6 +1,7 @@
 package com.zaca.zacamod.item.tab;
-import com.zaca.zacamod.item.ModItems;
 import com.zaca.zacamod.ZacaMod;
+import com.zaca.zacamod.item.ModItems;
+
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -29,6 +30,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BOCATAJAMON.get());
                         output.accept(ModItems.OCTA.get());
                         output.accept(ModItems.SAL_ORE.get());
+                        output.accept(ModItems.TOGEKISS.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {
