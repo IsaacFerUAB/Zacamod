@@ -1,11 +1,12 @@
 {
-  "item.zacamod.navaja": "Navaja Gitana",
+  "item.zacamod.navaja": "Navaja",
   "item.zacamod.pedrolo": "Pedrolo Sanché",
   "zaca_tab": "Reliquias Zacardianas",
   "item.zacamod.tenedor": "Tenedor",
   "item.zacamod.sal": "Sal",
   "item.zacamod.jamon": "Jamón",
   "item.zacamod.bocata_jamon": "Bocata de jamón",
-  "item.zacamod.octapelao": "Octapelao",
-  "block.zacamod.sal_ore": "Sal Ore"
+  "item.zacamod.octapelao": "Octagalleta",
+  "block.zacamod.sal_ore": "Mena de sal",
+  "item.zacamod.tique": "Rueda de Tique"
 }

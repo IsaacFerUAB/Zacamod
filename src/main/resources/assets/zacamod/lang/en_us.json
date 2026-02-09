@@ -5,8 +5,8 @@
   "item.zacamod.tenedor": "Fork",
   "item.zacamod.sal": "Salt",
   "item.zacamod.jamon": "Ham Serrano",
-  "item.zacamod.bocata_jamon": "Bocata de jamon",
-  "item.zacamod.octapelao": "Octapelao",
-  "block.zacamod.sal_ore": "Salt Ore"
-
+  "item.zacamod.bocata_jamon": "Bocata de ham",
+  "item.zacamod.octapelao": "Octookie",
+  "block.zacamod.sal_ore": "Salt Ore",
+  "item.zacamod.tique": "Tique's luck"
 }

@@ -11,32 +11,32 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 
-public class EpsteinLuck extends Item {
+public class Tique extends Item {
     
-    public EpsteinLuck(Item.Properties properties) {
+    public Tique(Item.Properties properties) {
         super(properties);
     }
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
     
+        if(!level.isClientSide()){
             // Añadimos Cooldown para que no spameen la ruleta como locos (20 ticks = 1 segundo)
-            player.getCooldowns().addCooldown(this, 40);
+            player.getCooldowns().addCooldown(this, 300);
         
-        RandomSource tirada = level.getRandom();
+            RandomSource tirada = level.getRandom();
 
-        if(tirada.nextFloat() <= 0.5){
-            player.sendSystemMessage(Component.literal("Epstein te ha penetrado muuy duro."));
-            player.setDeltaMovement(0, 1.5, 0); 
-            player.hurtMarked = true;
-        }else{
-            player.sendSystemMessage(Component.literal("¡Has tenido suerte!"));
-            player.addEffect(new MobEffectInstance(MobEffects.REGENERATION,100,1));
+            if(tirada.nextFloat() <= 0.2){
+                player.sendSystemMessage(Component.literal("Unlucky"));
+                player.addEffect(new MobEffectInstance(MobEffects.POISON,100,2));
+            }else{
+                player.sendSystemMessage(Component.literal("Tique!"));
+                player.addEffect(new MobEffectInstance(MobEffects.REGENERATION,100,1));
+            }
         }
+            // animacion mano
+            return InteractionResultHolder.success(player.getItemInHand(hand));
         
-
-        // Esto hace que la mano haga la animación de "usar"
-        return InteractionResultHolder.success(player.getItemInHand(hand));
     }
     
 }
