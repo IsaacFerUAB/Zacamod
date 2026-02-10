@@ -8,5 +8,6 @@
   "item.zacamod.bocata_jamon": "Bocata de ham",
   "item.zacamod.octapelao": "Octookie",
   "block.zacamod.sal_ore": "Salt Ore",
-  "item.zacamod.tique": "Tique's luck"
+  "item.zacamod.tique": "Tique's luck",
+  "tooltip.zacamod.tique.tooltip": "Try yoour luck"
 }

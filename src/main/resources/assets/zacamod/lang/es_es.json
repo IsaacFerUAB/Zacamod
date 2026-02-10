@@ -8,5 +8,6 @@
   "item.zacamod.bocata_jamon": "Bocata de jamón",
   "item.zacamod.octapelao": "Octagalleta",
   "block.zacamod.sal_ore": "Mena de sal",
-  "item.zacamod.tique": "Rueda de Tique"
+  "item.zacamod.tique": "Rueda de Tique",
+  "tooltip.zacamod.tique.tooltip": "Veneno o Cura?"
 }
