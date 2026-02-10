@@ -1,6 +1,7 @@
 {
 "replace": false,
 "values": [
-    "zacamod:sal_ore"
+    "zacamod:sal_ore",
+    "zacamod:alius_ore"
 ]
 }

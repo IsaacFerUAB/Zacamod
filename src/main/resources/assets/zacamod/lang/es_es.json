@@ -9,5 +9,7 @@
   "item.zacamod.octapelao": "Octagalleta",
   "block.zacamod.sal_ore": "Mena de sal",
   "item.zacamod.tique": "Rueda de Tique",
-  "tooltip.zacamod.tique.tooltip": "Veneno o Cura?"
+  "tooltip.zacamod.tique.tooltip": "Veneno o Cura?",
+  "block.zacamod.alius_ore": "Mena Alius",
+  "item.zacamod.alius": "Piedra Alius"
 }

@@ -16,6 +16,8 @@ public class ZacaBlocks {
     // Nuestro mineral de sal
     public static final RegistryObject<Block> SAL_ORE = BLOCKS.register("sal_ore",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> ALIUS_ORE = BLOCKS.register("alius_ore",
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)));
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

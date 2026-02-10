@@ -9,5 +9,7 @@
   "item.zacamod.octapelao": "Octookie",
   "block.zacamod.sal_ore": "Salt Ore",
   "item.zacamod.tique": "Tique's luck",
-  "tooltip.zacamod.tique.tooltip": "Try yoour luck"
+  "tooltip.zacamod.tique.tooltip": "Try your luck",
+  "block.zacamod.alius_ore": "Alius Ore",
+  "item.zacamod.alius": "Alius stone"
 }

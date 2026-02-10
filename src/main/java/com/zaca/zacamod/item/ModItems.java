@@ -40,8 +40,16 @@ public class ModItems {
     
     public static final RegistryObject<Item> SAL = ITEMS.register("sal",
         () -> new Item(new Item.Properties()));
+
+    //PIEDRA ALIUS
+    public static final RegistryObject<Item> ALIUS = ITEMS.register("alius",
+        () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
+
+    public static final RegistryObject<Item> ALIUS_ORE = ITEMS.register("alius_ore",
+        () -> new BlockItem(ZacaBlocks.ALIUS_ORE.get(), new Item.Properties()));
+    
     public static final RegistryObject<Item> TIQUE = ITEMS.register("tique",
-        () -> new Tique(new Item.Properties().durability(500)));
+        () -> new Tique(new Item.Properties().durability(500).rarity(Rarity.RARE)));
     //COMIDA
     public static final RegistryObject<Item> JAMON = ITEMS.register("jamon", 
         () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(2).saturationMod(0.2f).build()).stacksTo(64)));
@@ -54,9 +62,6 @@ public class ModItems {
     
     public static final RegistryObject<Item> OCTA = ITEMS.register("octapelao", 
         () -> new Item(new Item.Properties().food(new FoodProperties.Builder().nutrition(6).saturationMod(0.8f).build()).stacksTo(32)));
-
-    public static final RegistryObject<Item> TOGEKISS = ITEMS.register("togekiss",
-        () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

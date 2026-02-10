@@ -30,8 +30,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.BOCATAJAMON.get());
                         output.accept(ModItems.OCTA.get());
                         output.accept(ModItems.SAL_ORE.get());
-                        output.accept(ModItems.TOGEKISS.get());
                         output.accept(ModItems.TIQUE.get());
+                        output.accept(ModItems.ALIUS.get());
+                        output.accept(ModItems.ALIUS_ORE.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {
