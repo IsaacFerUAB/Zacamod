@@ -8,6 +8,7 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.SwordItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -30,9 +31,7 @@ public class ModItems {
         .durability(1200)
         ));
 
-    public static final RegistryObject<Item> TENEDOR = ITEMS.register("tenedor", 
-        () -> new Item(new Item.Properties()
-        .stacksTo(4)));
+    
     
     //MATERIALES / OTROS
     public static final RegistryObject<Item> PEDROLO = ITEMS.register("pedrolo", 
@@ -66,4 +65,26 @@ public class ModItems {
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
+
+
+
+    //ARAMS HERRAMIENTSAS
+
+
+    public static final RegistryObject<Item> TENEDOR = ITEMS.register("tenedor",
+            () -> new SwordItem(
+                    ModToolTiers.ALIUS, // Tu material
+                    4, // Daño de ataque ADICIONAL (3 + 3 del material + 1 base = 7 daño total)
+                    -2.0f, // Velocidad de ataque (Siempre usa -2.4f para que se sienta como una espada normal)
+                    new Item.Properties()
+            ));
+
+
+
+
+
+
+
+
+
 }
