@@ -17,7 +17,9 @@ public class ZacaBlocks {
     public static final RegistryObject<Block> SAL_ORE = BLOCKS.register("sal_ore",
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<Block> ALIUS_ORE = BLOCKS.register("alius_ore",
-        () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)));
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> ALIUS_BLOCK = BLOCKS.register("alius_block",
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);

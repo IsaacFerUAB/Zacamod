@@ -46,6 +46,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> ALIUS_ORE = ITEMS.register("alius_ore",
         () -> new BlockItem(ZacaBlocks.ALIUS_ORE.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> ALIUS_BLOCK = ITEMS.register("alius_block",
+        () -> new BlockItem(ZacaBlocks.ALIUS_BLOCK.get(), new Item.Properties()));
     
     public static final RegistryObject<Item> TIQUE = ITEMS.register("tique",
         () -> new Tique(new Item.Properties().durability(500).rarity(Rarity.RARE)));

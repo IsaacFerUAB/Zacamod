@@ -2,6 +2,7 @@
 "replace": false,
 "values": [
     "zacamod:sal_ore",
-    "zacamod:alius_ore"
+    "zacamod:alius_ore",
+    "zacamod:alius_block"
 ]
 }

@@ -11,5 +11,6 @@
   "item.zacamod.tique": "Tique's luck",
   "tooltip.zacamod.tique.tooltip": "Try your luck",
   "block.zacamod.alius_ore": "Alius Ore",
-  "item.zacamod.alius": "Alius stone"
+  "item.zacamod.alius": "Alius stone",
+  "item.zacamod.alius_block": " Alius Block"
 }
